@@ -37,7 +37,7 @@ _counter = 0
 
 
 # ── Routes ───────────────────────────────────────────────────────
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
     logger.info("health-check")
     return {
