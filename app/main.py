@@ -49,7 +49,7 @@ def health():
 @app.get("/")
 def root():
     return {
-        "message": "Todo API is live",
+        "message": "Todo API v2 is live",
         "docs": "/docs",
         "health": "/health"
     }
